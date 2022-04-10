@@ -2,13 +2,18 @@
 //pulls in all 3 tab content modules
 //initially loads the home module content to the DOM
 //has event listeners for each tab that will clear the dom and re-fill it with the necessary content
+
+const content = document.createElement('div');
+content.classList.add('content');
+document.body.append(content);
  
+
+
 import { headerUI } from './header.js';
 import { homeUI } from './home.js';
 import { menuUI } from './menu.js';
 import { contactUI } from './contact.js';
 import footerDOM from './footer.js';
-
 
 
 
@@ -56,6 +61,7 @@ const uiFunctions = (() => {
     return { pageLoad, setListeners };
 
 })();
+
 
 
 uiFunctions.pageLoad();
