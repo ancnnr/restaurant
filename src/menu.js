@@ -1,4 +1,5 @@
 // menu page
+import BGImage from './jonnysburger.jpg';
 
 const menuUI = (() => {
 
@@ -10,9 +11,9 @@ const menuUI = (() => {
         homeContent.classList.add('main');
         homeContent.classList.add('container');
     
-        const imgHeader = document.createElement('img');
+        const imgHeader = new Image();
         imgHeader.classList.add('imgheader');
-        imgHeader.src = '../src/jonnysburger.jpg';
+        imgHeader.src = BGImage;
         homeContent.append(imgHeader);
     
     

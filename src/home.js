@@ -1,15 +1,18 @@
 // home page
 
+import BGImage from './jonnysburger.jpg';
+
 const homeUI = (() => {
 
     function loadHome () {
         const homeContent = document.createElement('main');
         homeContent.classList.add('main');
         homeContent.classList.add('container');
-    
-        const imgHeader = document.createElement('img');
+
+
+        const imgHeader = new Image();
         imgHeader.classList.add('imgheader');
-        imgHeader.src = '../src/jonnysburger.jpg';
+        imgHeader.src = BGImage;
         homeContent.append(imgHeader);
         
 
@@ -42,3 +45,21 @@ const homeUI = (() => {
 
 
 export { homeUI };
+
+
+/*
+import Icon from './icon.png';
+
+ function component() {
+   const element = document.createElement('div');
+
+   // Lodash, now imported by this script
+   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+   element.classList.add('hello');
+
+  // Add the image to our existing div.
+  const myIcon = new Image();
+  myIcon.src = Icon;
+
+  element.appendChild(myIcon);
+*/
