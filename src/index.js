@@ -7,6 +7,7 @@ import { headerUI } from './header.js';
 import { homeUI } from './home.js';
 import { menuUI } from './menu.js';
 import { contactUI } from './contact.js';
+import footerDOM from './footer.js';
 
 
 
@@ -18,24 +19,28 @@ const uiFunctions = (() => {
     const pageLoad = () => {
         pageContent.append( headerUI.loadHeader() );
         pageContent.append( homeUI.loadHome() );
+        pageContent.append(footerDOM());
     };
 
     const loadHome = () => {
         resetDOM(pageContent);
         pageContent.append( headerUI.loadHeader() );
         pageContent.append( homeUI.loadHome() );
+        pageContent.append(footerDOM());
     };
 
     const loadMenu = () => {
         resetDOM(pageContent);
         pageContent.append( headerUI.loadHeader() );
         pageContent.append( menuUI.loadMenu() );
+        pageContent.append(footerDOM());
     };
 
     const loadContact = () => {
         resetDOM(pageContent);
         pageContent.append( headerUI.loadHeader() );
         pageContent.append( contactUI.loadContact() );
+        pageContent.append(footerDOM());
     };
 
     const resetDOM = (parent) => {

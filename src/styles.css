@@ -233,6 +233,10 @@ textarea {
     align-items: center;
 }
 
+.map-embed {
+    padding-top: var(--spacing-md);
+}
+
 /* FOOTER */
 
 .footer {
@@ -245,6 +249,7 @@ textarea {
     gap: 10px;
     width: 100%;
     padding: var(--spacing-sm);
+    background-color: var(--white);
   }
 
   /* MODALS */
